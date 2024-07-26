@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('aktor_films', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_aktor');
-            $table->unsignedBigInteger('id_film');
+             $table->unsignedBigInteger('id_film');
 
             $table->foreign('id_aktor')->references('id')->on('aktors')
             ->onDelete('cascade');
